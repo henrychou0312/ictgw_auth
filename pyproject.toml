@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ictgw-auth"
+dynamic = ["version"]
+description = "Command-line login for the ICT campus network (gw.ict.ac.cn)"
+readme = "README.md"
+requires-python = ">=3.6"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "henry", email = "henry.chou0312@gmail.com" }]
+
+[project.urls]
+Homepage = "https://github.com/henrychou0312/net_auth"
+Repository = "https://github.com/henrychou0312/net_auth"
+
+[project.scripts]
+net_auth = "net_auth:main"
+
+[tool.hatch.version]
+source = "vcs"
+fallback-version = "0.0.0"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["net_auth.py"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["net_auth.py", "README.md", "LICENSE"]
