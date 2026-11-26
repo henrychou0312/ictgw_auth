@@ -13,8 +13,8 @@ license-files = ["LICENSE"]
 authors = [{ name = "henry", email = "henry.chou0312@gmail.com" }]
 
 [project.urls]
-Homepage = "https://github.com/henrychou0312/net_auth"
-Repository = "https://github.com/henrychou0312/net_auth"
+Homepage = "https://github.com/henrychou0312/ictgw_auth"
+Repository = "https://github.com/henrychou0312/ictgw_auth"
 
 [project.scripts]
 net_auth = "net_auth:main"
